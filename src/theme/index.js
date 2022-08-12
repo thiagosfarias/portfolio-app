@@ -7,7 +7,12 @@ const theme = {
   textColorLight: '#484848',
   textColorDark: '#F0F0F0',
   backgroudColoLight: '#F0F0F0',
-  backgroudColorDark: '#171717'
+  backgroudColorDark: '#171717',
+
+  //fonts
+  textTitle: "1.3rem",
+  textBody: "1rem",
+  sideText: "0.8rem"
 
 }
  

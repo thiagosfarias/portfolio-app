@@ -1,14 +1,37 @@
 import styled from "styled-components";
 import theme from '../../theme'
 
-export const Educations = styled.div`
+export const Main = styled.div`
+    width: 100%;
+    height: 40rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: 630px) {
+        margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 380px) {
+        margin-left: 0;
+    }
+
+    
+`
+
+export const Project = styled.div`
     margin-top: 1rem;
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
-    border-left: 10px solid ${theme.educationColor};
+    border-left: 10px solid ${theme.projectsColor};
     :hover {
-        border: 10px solid ${theme.educationColor};
+        border: 10px solid ${theme.projectsColor};
     }
     border-radius: 15%;
 
@@ -21,13 +44,9 @@ export const Educations = styled.div`
         margin-left: 0;
     }
 
-    h1{
-        margin-left: 1rem;
-    }
-
 `
 
-export const EducationHeader = styled.div`
+export const ProjectHeader = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,7 +81,7 @@ export const EducationHeader = styled.div`
     
 `
 
-export const EducationBody = styled.div`
+export const ProjectBody = styled.div`
     p {
         font-size: ${theme.textBody};
         margin-left: 0.7rem;
@@ -74,3 +93,4 @@ export const EducationBody = styled.div`
         max-width: 350px;
     }
 `
+

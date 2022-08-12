@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import GlobalStyle from '../../globalStyle'
 import AboutMe from '../about-me';
 import Education from '../education'
@@ -9,9 +9,11 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import Projects from '../projects';
 
 function App() {
   const [switchBackgroud, setSwitchBackgroud] = useState(true);
+
 
   return (
     <Fragment>
@@ -22,6 +24,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<AboutMe switch={switchBackgroud}/>}/>
                 <Route path='/education' element={<Education switch={switchBackgroud}/>}/>
+                <Route path='/projects' element={<Projects switch={switchBackgroud}/>}/>
               </Routes>
             </Router>
             <ButtonDarkMode switch={switchBackgroud} onClick={() => setSwitchBackgroud(!switchBackgroud)}>{switchBackgroud ? "Dark Mode" : "Light Mode"}</ButtonDarkMode>
