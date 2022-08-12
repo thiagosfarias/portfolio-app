@@ -6,9 +6,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     min-height: 100% !important;
-    height: 100vh;
-    background: ${theme.backgroudColor};
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+    background: ${props => props.switch ? theme.backgroudColorWhite : theme.backgroudColorDark};
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
  
